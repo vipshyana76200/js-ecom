@@ -1,7 +1,8 @@
 import { showToast } from "./utils.js"
 
 const home = document.getElementById("home")
-const URL = "http://localhost:5000"
+const URL = "https://js-ecom-kuv9.onrender.com"
+// const URL = "http://localhost:5000"
 const count = document.getElementById("count")
 const productLimit = document.getElementById("product-limit")
 const pagi = document.getElementById("pagi")
