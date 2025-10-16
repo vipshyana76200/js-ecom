@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS E Com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">JS ECOM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                    <a class="nav-link" href="./admin.html">Admin</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                <i class="bi bi-cart"></i>
+                <span id="count">0</span>
+            </button>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- product start -->
+    <div class="container">
+        <div id="toast-container"></div>
+
+        <select class="form-select my-3" id="product-limit">
+            <option value="1">1</option>
+            <option selected value="2">2</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+        <div id="pagi"></div>
+        <div class="row" id="home">
+
+        </div>
+    </div>
+    <!-- product end -->
+
+    <!-- cart start -->
+
+    <div class="offcanvas offcanvas-start" id="cart">
+        <div class="offcanvas-header bg-primary text-light">Cart</div>
+        <div class="offcanvas-body">
+
+        </div>
+    </div>
+
+    <!-- cart end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./assets/js/home.js"></script>
+</body>
+
+</html>
